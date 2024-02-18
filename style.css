@@ -27,6 +27,10 @@ nav {
     vertical-align: baseline;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -68,7 +72,7 @@ ul {
     align-items: center;
     justify-content: center;
     color: white;
-
+    padding: 1rem;
 }
 
 .nav-container a {
@@ -182,7 +186,6 @@ ul {
 }
 
 .footer {
-    width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: center;
