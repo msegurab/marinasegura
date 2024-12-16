@@ -339,3 +339,18 @@ span {
         grid-template-columns: 1fr;
     }
 }
+
+.cv {
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgba(173, 216, 230, 0.1);
+
+    &:hover {
+        color: #121212;
+        background-color: rgba(173, 216, 230, 0.442);
+    }
+}
