@@ -49,6 +49,16 @@ ul {
     height: 700px;
 }
 
+.header-blog-llibre{
+    width: 100%;
+    background-image: url('img/pl-8.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    overflow: hidden;
+}
+
 .header-nav {
     width: 100%;
     padding: 2rem 2rem;
@@ -92,7 +102,22 @@ ul {
 .container-title {
     font-weight: 900;
     font-size: 4rem;
+    display: inline-block;
+    animation: slide-in 2s forwards; /* Animación de deslizamiento */
 
+}
+
+.container-subtitle{
+    animation: opacidad 2s forwards;
+}
+
+@keyframes opacidad {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .works {
@@ -222,6 +247,12 @@ ul {
     margin: 0 auto;
 }
 
+@media (max-width: 960px){
+    .blog {
+        width: 100%;
+    }
+}
+
 .header-blog {
     justify-content: start;
 }
@@ -281,4 +312,30 @@ span {
     height: auto;
     object-fit: contain;
     margin: 10px;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-2%); /* Comienza fuera de la pantalla a la izquierda */
+    }
+    100% {
+        transform: translateX(0); /* Termina en su posición original */
+    }
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.galeria img{
+    padding: 0;
+}
+
+@media (max-width: 640px){
+    .galeria {
+        grid-template-columns: 1fr;
+    }
 }
